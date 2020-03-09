@@ -1,0 +1,48 @@
+/* Основные стили */
+
+input {
+  margin: 0;
+  padding: 5px;
+}
+
+span {
+  font-weight: bold;
+}
+
+/* Стили калькулятора */
+
+.content {
+  margin: 0 auto;
+  width: 500px;
+  border: 1px solid black;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+
+  padding: 0 50px 10px 50px;
+}
+.block {
+  display: flex;
+  flex-direction: column;
+  margin-top: 20px;
+}
+.top__header {
+  padding: 20px;
+
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+
+  background: lightgray;
+}
+.block__title {
+  margin-bottom: 10px;
+}
+.amount {
+  padding: 5px 50px;
+  background: lightgray;
+}
+.title {
+  font-size: 25px;
+}

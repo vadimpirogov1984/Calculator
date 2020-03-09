@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Ипотечный калькулятор</title>
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <div class="content">
+    <div class="top__header">Калькулятор расчета ипотеки</div>
+    <div class="container">
+      <div class="block block__price">
+        <div class="block__title">Стоимость недвижимости:</div>
+        <input type="text" id="priceText" value="2000000₽" />
+        <input
+          type="range"
+          min="1000000"
+          max="15000000"
+          step="1"
+          value="2000000"
+          id="price"
+        />
+      </div>
+      <div class="block block__initital">
+        <div class="block__title">Первоначальный взнос:</div>
+        <input type="text" id="initialText" value="5000000₽" />
+        <input
+          type="range"
+          min="300000"
+          max="10000000"
+          value="5000000"
+          id="initial"
+        />
+      </div>
+      <div class="block block__time">
+        <div class="block__title">Срок кредита:</div>
+        <input type="text" id="timeText" value="15 лет" />
+        <input type="range" min="1" max="30" value="15" id="ttr" />
+      </div>
+      <div class="block block__percent">
+        <div class="block__title">Процентная ставка:</div>
+        <input type="text" id="percentText" value="10%" disabled />
+      </div>
+    </div>
+    <div class="amount">
+      <p class="title">
+        Ежемесячный платеж: <span id="payment">30000₽</span>
+      </p>
+      <p class="subtitle">
+        Итого всех выплат <span id="common"> 1000000₽</span>
+      </p>
+      <p class="subtitle">
+        Итого переплата <span id="subpayment">35000₽</span>
+      </p>
+    </div>
+  </div>
+  <script src="js/main.js"></script>
+</body>
+</html>
